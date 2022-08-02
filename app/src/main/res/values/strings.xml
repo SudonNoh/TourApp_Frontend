@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TourApp</string>
+    <string name="login">로 그 인</string>
+    <string name="edit_login_id">Email</string>
+    <string name="edit_login_pw">Password</string>
+    <string name="logout">로 그 아 웃</string>
 </resources>

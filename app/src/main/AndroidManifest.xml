@@ -14,7 +14,11 @@
         android:theme="@style/Theme.TourApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".NaverButtonLogin"
+            android:exported="false" />
+
+        <activity
+            android:name=".NaverAuthenticateLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

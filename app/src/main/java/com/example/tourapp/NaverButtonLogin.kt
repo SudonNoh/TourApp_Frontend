@@ -3,18 +3,17 @@ package com.example.tourapp
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
-import com.example.tourapp.databinding.ActivityMainBinding
+import com.example.tourapp.databinding.ActivityNaverButtonLoginBinding
 import com.navercorp.nid.NaverIdLoginSDK
 import com.navercorp.nid.oauth.NidOAuthLogin
 import com.navercorp.nid.oauth.OAuthLoginCallback
 import com.navercorp.nid.profile.NidProfileCallback
 import com.navercorp.nid.profile.data.NidProfileResponse
 
-class MainActivity : AppCompatActivity() {
+class NaverButtonLogin : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityNaverButtonLoginBinding
     lateinit var context: Context
 
     lateinit var naverClientId: String
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityNaverButtonLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         init()
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonOAuthLoginImg.setOAuthLoginCallback(object : OAuthLoginCallback {
             override fun onSuccess() {
-                get_id()
+                getId()
             }
 
             override fun onFailure(httpStatus: Int, message: String) {
@@ -62,15 +61,15 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun get_id() {
+    private fun getId() {
         NidOAuthLogin().callProfileApi(object : NidProfileCallback<NidProfileResponse> {
-            override fun onSuccess(response: NidProfileResponse) {
+            override fun onSuccess(result: NidProfileResponse) {
                 Toast.makeText(
                     context,
-                    "$response",
+                    "$result",
                     Toast.LENGTH_SHORT
                 ).show()
-                binding.tvApiResult.text = response.toString()
+                binding.tvApiResult.text = result.toString()
             }
 
             override fun onFailure(httpStatus: Int, message: String) {

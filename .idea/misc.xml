@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sudon/Project/TourApp/Android/app/src/main/res/drawable/edit_login.xml" value="0.2365" />
         <entry key="..\:/Users/sudon/Project/TourApp/Android/app/src/main/res/layout/activity_main.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/sudon/Project/TourApp/Android/app/src/main/res/layout/activity_naver_authenticate_login.xml" value="0.22" />
+        <entry key="..\:/Users/sudon/Project/TourApp/Android/app/src/main/res/layout/activity_naver_button_login.xml" value="0.1403985507246377" />
       </map>
     </option>
   </component>
