@@ -4,4 +4,13 @@
     <string name="edit_login_id">Email</string>
     <string name="edit_login_pw">Password</string>
     <string name="logout">로 그 아 웃</string>
+    <string name="signup">SignUp</string>
+    <string name="signin">SignIn</string>
+    <string name="signout">SignOut</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="id">ID</string>
+    <string name="password1">Password1</string>
+    <string name="password2">password2</string>
 </resources>

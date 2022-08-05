@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <EditText
+        android:id="@+id/signInPageIDEdit"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_login"
+        android:hint="@string/id"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/login_btn"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/signInPagePwEdit"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_login"
+        android:hint="@string/edit_login_pw"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/login_btn"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/SignInPageSignInBtn"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/login_btn"
+        android:gravity="center"
+        android:text="@string/signin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SignInPageSignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="#000FFF"
+        android:layout_marginStart="95dp"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

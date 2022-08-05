@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signUpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/signup"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signUpPageID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/id"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPage" />
+
+    <EditText
+        android:id="@+id/signUpPageIDEdit"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/signUpPagePW1"
+        app:layout_constraintTop_toBottomOf="@id/signUpPage"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="@string/id"
+        />
+
+    <TextView
+        android:id="@+id/signUpPagePW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/password1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPageID" />
+
+    <EditText
+        android:id="@+id/signupPagePWEdit1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/signUpPagePW1"
+        app:layout_constraintTop_toBottomOf="@id/signUpPageID"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="@string/password1"
+        />
+
+    <TextView
+        android:id="@+id/signUpPagePW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/password2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPagePW1" />
+
+    <EditText
+        android:id="@+id/signupPagePWEdit2"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/signUpPagePW1"
+        app:layout_constraintTop_toBottomOf="@id/signUpPagePW1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:hint="@string/password2"
+        />
+
+    <TextView
+        android:id="@+id/signUpPageMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mobile"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPagePW2" />
+
+    <EditText
+        android:id="@+id/signUpPageMobileEdit"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/signUpPagePW1"
+        app:layout_constraintTop_toBottomOf="@id/signUpPagePW2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:inputType="phone"
+        android:hint="@string/mobile"
+        />
+
+    <TextView
+        android:id="@+id/signUpPageBtn"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPageMobileEdit"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/login_btn"
+        android:text="@string/signup"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

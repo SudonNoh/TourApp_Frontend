@@ -46,8 +46,8 @@ class NaverAuthenticateLogin : AppCompatActivity() {
         val profileCallback = object : NidProfileCallback<NidProfileResponse> {
             @SuppressLint("SetTextI18n")
             override fun onSuccess(result: NidProfileResponse) {
-                val email = result.profile?.email
-                Toast.makeText(this@NaverAuthenticateLogin, "$email 로 로그인 성공!", Toast.LENGTH_SHORT).show()
+                val id = result.profile?.id
+                Toast.makeText(this@NaverAuthenticateLogin, "$id 로 로그인 성공!", Toast.LENGTH_SHORT).show()
             }
 
             override fun onError(errorCode: Int, message: String) {
